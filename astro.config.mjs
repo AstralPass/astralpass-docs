@@ -7,6 +7,7 @@ export default defineConfig({
 	site: 'https://docs.astralpass.com',
 	integrations: [
 		starlight({
+			disable404Route: true,
 			title: 'AstralPass Docs',
 			description: 'Documentation for AstralPass, the Discord, wallet, and Star Atlas bridge.',
 			logo: {

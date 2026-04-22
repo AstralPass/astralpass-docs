@@ -39,7 +39,9 @@ Production domain:
 - About AstralPass
 - Getting Started
 - Linking Wallets
+- Hardware Wallets
 - Discord Roles
+- Solo Players
 - Troubleshooting
 - FAQ
 
@@ -48,6 +50,8 @@ Production domain:
 - Player Profiles
 - Joining a DAC On-Chain
 - DAC Membership and Discord Roles
+- DAC Admin Basics
+- Glossary
 
 ## Commands
 
@@ -62,5 +66,6 @@ npm run preview
 
 - The site URL is configured as `https://docs.astralpass.com` in `astro.config.mjs`.
 - Starlight's site logo uses an Astro-managed asset from `src/assets/`.
-- Public brand files remain in `public/brand/` for direct URL use on the splash and 404 pages.
+- Public brand files remain in `public/brand/` for direct URL use on pages like the home hero and the custom 404.
+- The logo currently exists in both `src/assets/` and `public/brand/` on purpose because Starlight config needs an Astro-managed image while page-level direct URLs are simpler from `public/`.
 - Copy should stay practical and user-facing. Avoid turning end-user docs into internal architecture notes.

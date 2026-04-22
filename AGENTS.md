@@ -37,10 +37,12 @@ If adding pages, prefer expanding these sections before inventing many new top-l
 - Reuse the AstralPass branding already in the repo.
 - Site logo in Starlight config should use an Astro-managed asset from `src/assets/`.
 - Public pages may reference `/public/brand/*` assets directly when needed.
+- The logo may intentionally exist in both `src/assets/` and `public/brand/` because those two use cases have different path requirements.
 
 ## Workflow
 
 - Run `npm run build` before claiming the docs site is in a good state.
+- Treat `TEST_PLAN.md` as the current validation contract for this repo and update it when the quality gate changes.
 - When changing copy or navigation, check for broken links and awkward page sequencing.
 - If adding new sections, update both `astro.config.mjs` sidebar configuration and `README.md` when appropriate.
 
