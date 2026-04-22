@@ -1,49 +1,66 @@
-# Starlight Starter Kit: Basics
+# AstralPass Docs
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Documentation site for AstralPass, built with Astro Starlight and intended for deployment on Cloudflare Pages.
 
-```
-npm create astro@latest -- --template starlight
-```
+## Domain
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Production domain:
+- `https://docs.astralpass.com`
 
-## 🚀 Project Structure
+## Stack
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+- Astro
+- Starlight
+- static output for Cloudflare Pages
 
-```
+## Project structure
+
+```text
 .
 ├── public/
+│   └── brand/                 # public favicon and brand assets
 ├── src/
-│   ├── assets/
+│   ├── assets/                # Astro-managed images (used by Starlight config)
 │   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
+│   │   └── docs/              # documentation content
+│   │       ├── core/
+│   │       ├── star-atlas/
+│   │       ├── 404.mdx
+│   │       └── index.mdx
+│   └── styles/
+│       └── custom.css         # brand-level Starlight overrides
 ├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+└── package.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## Main sections
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+### Core
+- About AstralPass
+- Getting Started
+- Linking Wallets
+- Discord Roles
+- Troubleshooting
+- FAQ
 
-Static assets, like favicons, can be placed in the `public/` directory.
+### Star Atlas
+- Why AstralPass for Star Atlas
+- Player Profiles
+- Joining a DAC On-Chain
+- DAC Membership and Discord Roles
 
-## 🧞 Commands
+## Commands
 
-All commands are run from the root of the project, from a terminal:
+```bash
+npm install
+npm run dev
+npm run build
+npm run preview
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Notes
 
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+- The site URL is configured as `https://docs.astralpass.com` in `astro.config.mjs`.
+- Starlight's site logo uses an Astro-managed asset from `src/assets/`.
+- Public brand files remain in `public/brand/` for direct URL use on the splash and 404 pages.
+- Copy should stay practical and user-facing. Avoid turning end-user docs into internal architecture notes.
