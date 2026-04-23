@@ -37,8 +37,8 @@ export default defineConfig({
 					label: 'Star Atlas',
 					items: [
 						{ label: 'Why AstralPass for Star Atlas', slug: 'star-atlas/why-astralpass-for-star-atlas' },
-						{ label: 'What Is a DAC?', slug: 'star-atlas/what-is-a-dac' },
 						{ label: 'Player Profiles', slug: 'star-atlas/player-profiles' },
+						{ label: 'What Is a DAC?', slug: 'star-atlas/what-is-a-dac' },
 						{ label: 'Joining a DAC On-Chain', slug: 'star-atlas/joining-a-dac-on-chain' },
 						{ label: 'DAC Membership and Discord Roles', slug: 'star-atlas/dac-membership-and-discord-roles' },
 						{ label: 'Glossary', slug: 'star-atlas/glossary' },
