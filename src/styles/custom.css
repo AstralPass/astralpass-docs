@@ -1,11 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Sono:wght@400;500;600&display=swap');
 
+@font-face {
+	font-family: 'Microgramma';
+	src: url('/fonts/microgrammanormal.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'MicrogrammaExt';
+	src: url('/fonts/MicrogrammaDBolExt.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Orbitron';
+	src: url('/fonts/Orbitron-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--ap-font-body: 'Bai Jamjuree', sans-serif;
-	--ap-font-heading: 'Rajdhani', sans-serif;
-	--ap-font-display: 'Bebas Neue', sans-serif;
+	--ap-font-heading: 'MicrogrammaExt', sans-serif;
+	--ap-font-heading-compact: 'Bebas Neue', sans-serif;
+	--ap-font-logo: 'Orbitron', sans-serif;
 	--ap-font-mono: 'Sono', monospace;
 
 	--ap-bg-1: #151139;
@@ -19,7 +43,7 @@
 	--ap-text-soft: rgba(255, 255, 255, 0.72);
 	--ap-text-muted: rgba(255, 255, 255, 0.56);
 	--ap-accent: #00ffaa;
-	--ap-accent-soft: #5d56c2;
+	--ap-accent-soft: rgb(93, 86, 194);
 	--ap-accent-cyan: #08eade;
 	--ap-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.28);
 
@@ -31,7 +55,6 @@
 	--sl-color-accent: var(--ap-accent);
 	--sl-color-accent-high: #d5fff1;
 	--sl-color-text: var(--ap-text);
-	--sl-color-text-accent: var(--ap-accent);
 	--sl-color-text-invert: #0c1022;
 	--sl-color-text-muted: var(--ap-text-muted);
 	--sl-color-text-accent: var(--ap-accent);
@@ -92,7 +115,12 @@ body {
 	background-position: center;
 }
 
-.site-title,
+.site-title {
+	font-family: var(--ap-font-logo);
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
@@ -100,19 +128,32 @@ h4,
 .sl-markdown-content :is(h1, h2, h3, h4) {
 	font-family: var(--ap-font-heading);
 	letter-spacing: 0.02em;
+	text-transform: uppercase;
 }
 
 .hero .tagline,
-.hero h1,
-.sl-markdown-content .hero h1 {
-	font-family: var(--ap-font-display);
-	letter-spacing: 0.03em;
+.sidebar-content summary,
+.right-sidebar h2,
+.pagination-links a {
+	font-family: var(--ap-font-heading-compact);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
 code,
 pre,
 kbd {
 	font-family: var(--ap-font-mono);
+}
+
+body,
+p,
+li,
+dd,
+dt,
+.sl-markdown-content p,
+.sl-markdown-content li {
+	letter-spacing: 0.01em;
 }
 
 header.top-header {
