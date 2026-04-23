@@ -13,26 +13,31 @@ That matters because Star Atlas communities often need more than a generic walle
 - DAC membership on-chain
 - Discord-side community access
 
-## The bridge AstralPass provides
+## Why generic verification is not enough
 
-AstralPass helps DACs and players connect two worlds that often drift apart:
+A generic verification tool can prove that a wallet belongs to a user.
+But Star Atlas communities often need to know more than that.
 
-- being part of a Discord server
-- being part of a Star Atlas DAC on-chain
-
-## What “Star Atlas native” means here
-
-In AstralPass, Player Profiles are treated as first-class data.
-That means the product is built around Star Atlas-specific identity and membership concepts instead of treating them like just another token filter.
-
-## Why this matters to DACs
-
-DACs often care about more than whether a wallet exists.
 They may also care about:
 
-- whether you are in a DAC
-- which DAC you are in
-- what role you hold there
-- what onboarding step you have or have not completed
+- whether the user has a Player Profile
+- whether the user belongs to a DAC on-chain
+- whether the user's Discord-side status matches their Star Atlas-side status
 
-AstralPass was designed to make that bridge practical and visible.
+## What AstralPass adds
+
+AstralPass is meant to close the gap between:
+
+- being part of a Discord server
+- being part of a Star Atlas DAC
+- being recognized correctly across both systems
+
+That is the main reason AstralPass exists as a Star Atlas-native product instead of a generic wallet-verification layer.
+
+## Where to go next
+
+If you want to understand the Star Atlas-specific pieces in more detail, continue with:
+
+- [Player Profiles](/star-atlas/player-profiles/)
+- [Joining a DAC On-Chain](/star-atlas/joining-a-dac-on-chain/)
+- [DAC Membership and Discord Roles](/star-atlas/dac-membership-and-discord-roles/)
