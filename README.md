@@ -18,15 +18,17 @@ Production domain:
 ```text
 .
 ├── public/
-│   └── brand/                 # public favicon and brand assets
+│   ├── brand/                 # public favicon, background, and brand assets
+│   └── fonts/                 # website font files reused by the docs theme
 ├── src/
 │   ├── assets/                # Astro-managed images (used by Starlight config)
 │   ├── content/
 │   │   └── docs/              # documentation content
 │   │       ├── core/
 │   │       ├── star-atlas/
-│   │       ├── 404.mdx
 │   │       └── index.mdx
+│   ├── pages/
+│   │   └── 404.astro          # custom 404 page
 │   └── styles/
 │       └── custom.css         # brand-level Starlight overrides
 ├── astro.config.mjs
@@ -67,5 +69,6 @@ npm run preview
 - The site URL is configured as `https://docs.astralpass.com` in `astro.config.mjs`.
 - Starlight's site logo uses an Astro-managed asset from `src/assets/`.
 - Public brand files remain in `public/brand/` for direct URL use on pages like the home hero and the custom 404.
+- Website font files are mirrored into `public/fonts/` so the docs theme can reuse the same `MicrogrammaExt` and `Orbitron` faces as the main AstralPass site.
 - The logo currently exists in both `src/assets/` and `public/brand/` on purpose because Starlight config needs an Astro-managed image while page-level direct URLs are simpler from `public/`.
 - Copy should stay practical and user-facing. Avoid turning end-user docs into internal architecture notes.
