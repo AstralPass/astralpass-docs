@@ -52,7 +52,6 @@ Production domain:
 - Player Profiles
 - Joining a DAC On-Chain
 - DAC Membership and Discord Roles
-- DAC Admin Basics
 - Glossary
 
 ## Commands

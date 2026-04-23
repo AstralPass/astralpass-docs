@@ -40,7 +40,6 @@ export default defineConfig({
 						{ label: 'Player Profiles', slug: 'star-atlas/player-profiles' },
 						{ label: 'Joining a DAC On-Chain', slug: 'star-atlas/joining-a-dac-on-chain' },
 						{ label: 'DAC Membership and Discord Roles', slug: 'star-atlas/dac-membership-and-discord-roles' },
-						{ label: 'DAC Admin Basics', slug: 'star-atlas/dac-admin-basics' },
 						{ label: 'Glossary', slug: 'star-atlas/glossary' },
 					],
 				},

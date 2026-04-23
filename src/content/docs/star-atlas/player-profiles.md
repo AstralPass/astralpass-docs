@@ -1,35 +1,31 @@
 ---
 title: Player Profiles
-description: Why Player Profiles matter in AstralPass and why they are treated as first-class Star Atlas data.
+description: What Player Profiles are and why AstralPass treats them as first-class Star Atlas data.
 ---
 
-In AstralPass, **Player Profiles** are first-class Star Atlas data.
+A **Player Profile** is one of the main ways AstralPass can understand who a user is inside Star Atlas.
 
-## Why that matters
+## Why AstralPass treats Player Profiles as first-class data
 
-This is one of the main ways AstralPass differs from a generic wallet-verification tool.
-Instead of stopping at wallet ownership, AstralPass can use Star Atlas-native identity data as part of its logic and user experience.
+This is one of the key ways AstralPass differs from a generic wallet-verification tool.
 
-## What Player Profiles help connect
+Instead of stopping at wallet ownership, AstralPass can use Player Profiles to connect a wallet to Star Atlas-specific identity and context.
 
-Player Profiles help connect a linked wallet to Star Atlas-specific context, such as:
+## What Player Profiles help with
 
-- DAC membership
-- DAC role information
+Player Profiles can help AstralPass connect a user to things like:
+
+- DAC membership context
+- role-related context inside a DAC
 - profile-related dashboard information
-- governance and voting views
+- governance or voting-related views
 
-## For users
+## Why this matters to users
 
-If you are using AstralPass in a Star Atlas context, your Player Profile may be one of the main ways a DAC or dashboard understands who you are in-game.
+If you are using AstralPass in a Star Atlas context, your Player Profile can be one of the pieces that explains why a DAC recognizes you, or why a dashboard shows the information it does.
 
-## For DACs
+## Why this matters to DACs
 
-That gives DACs a better foundation for:
+For DACs, Player Profiles make it easier to build logic around real Star Atlas identity instead of relying on wallet ownership alone.
 
-- onboarding
-- verification
-- role decisions
-- future data-driven tooling
-
-If you have not yet joined a DAC on-chain, continue with [Joining a DAC On-Chain](/star-atlas/joining-a-dac-on-chain/).
+If your next question is about joining or verifying DAC membership, continue with [Joining a DAC On-Chain](/star-atlas/joining-a-dac-on-chain/).

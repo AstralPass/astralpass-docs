@@ -1,48 +1,44 @@
 ---
 title: DAC Membership and Discord Roles
-description: How Star Atlas DAC membership and Discord role syncing relate inside AstralPass.
+description: How Star Atlas DAC membership can affect Discord role syncing in AstralPass.
 ---
 
-AstralPass helps DACs connect two systems that users often assume are already the same:
+This page is about one specific question:
 
-- **Discord membership and roles**
-- **Star Atlas DAC membership on-chain**
+**Why does my Discord role depend on Star Atlas DAC membership at all?**
 
-## Why this matters
+## The short answer
 
-A DAC may want Discord access to reflect real membership or status inside Star Atlas.
-That can include checks such as:
+Some DACs want Discord access to reflect real membership or status inside Star Atlas.
+
+That means AstralPass may use DAC-related checks such as:
 
 - whether you are in a DAC
 - which DAC you are in
 - what role you hold there
 - whether another Discord-side requirement is also complete
 
-## What AstralPass does
+## What AstralPass does with that
 
-AstralPass helps evaluate those conditions and then:
+AstralPass can evaluate those checks and then:
 
-- guide you through missing steps
-- update your Discord roles
-- keep Discord and on-chain membership more closely aligned
+- assign a role
+- remove a role
+- keep a role unchanged
+- tell you that another step is still missing
 
-## Why users sometimes get confused
+## What this page is not about
 
-A user might assume that:
+This page is **not** the full onboarding explanation.
+If you are trying to understand the full join flow, read [Joining a DAC On-Chain](/star-atlas/joining-a-dac-on-chain/) first.
 
-- joining on-chain is enough, or
-- getting a Discord role is enough
+## What to ask when a role looks wrong
 
-But AstralPass often sits in the middle, making sure those two worlds actually match the DAC's configured rules.
+If your expected Discord role is missing, ask these questions in order:
 
-## Practical takeaway
+1. Did I link the correct wallet?
+2. Did that wallet actually join the DAC on-chain?
+3. Did I finish the Discord-side approval step too?
+4. Has AstralPass re-evaluated my current state yet?
 
-If an expected Discord role is missing, do not only ask:
-
-- “did I link my wallet?”
-
-Also ask:
-
-- “did I join the DAC on-chain with the correct wallet?”
-- “did I finish the Discord-side approval step?”
-- “has AstralPass re-evaluated my current state yet?”
+That is usually the shortest path to understanding why a role did or did not update.
