@@ -9,7 +9,8 @@ A tool that helps connect Discord identity, wallet ownership, and Star Atlas-rel
 
 ## DAC
 
-A Star Atlas community or guild-like organization with both Discord-side and on-chain membership concepts.
+Short for **Decentralized Autonomous Corporation**.
+In practice, this is Star Atlas' version of a more formal player-run organization, similar to a guild, clan, or alliance.
 
 ## Discord approval
 

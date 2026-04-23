@@ -7,6 +7,8 @@ This page is about one specific question:
 
 **Why does my Discord role depend on Star Atlas DAC membership at all?**
 
+If you need the basic Star Atlas context first, read [What Is a DAC?](/star-atlas/what-is-a-dac/).
+
 ## The short answer
 
 Some DACs want Discord access to reflect real membership or status inside Star Atlas.

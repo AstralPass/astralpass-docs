@@ -6,6 +6,8 @@ description: How on-chain DAC membership fits into AstralPass onboarding and why
 For many Star Atlas communities, joining a DAC is not just a Discord step.
 It also has an **on-chain** side.
 
+If you are not yet sure what a DAC is in the first place, read [What Is a DAC?](/star-atlas/what-is-a-dac/) first.
+
 ## The important distinction
 
 From a user point of view, it is easy to think:
