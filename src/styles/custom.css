@@ -1,0 +1,24 @@
+:root {
+	--sl-color-accent-low: #162033;
+	--sl-color-accent: #5ca9ff;
+	--sl-color-accent-high: #d7e9ff;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #eaf3ff;
+	--sl-color-accent: #1f6fe5;
+	--sl-color-accent-high: #123c85;
+}
+
+.hero img[alt='AstralPass'] {
+	display: block;
+	padding: 1rem;
+	border-radius: 1rem;
+	background: linear-gradient(180deg, rgba(7, 12, 20, 0.92), rgba(18, 28, 43, 0.96));
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+:root[data-theme='light'] .site-title img,
+:root[data-theme='light'] .social-icons a img {
+	filter: drop-shadow(0 0 0.12rem rgba(17, 25, 40, 0.2));
+}

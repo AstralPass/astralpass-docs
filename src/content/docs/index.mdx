@@ -1,40 +1,71 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: AstralPass Docs
+description: Learn what AstralPass is, how wallet linking works, and how it connects Discord with Star Atlas.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Link your wallet. Verify your role. Unlock the galaxy.
   image:
-    file: ../../assets/houston.webp
+    html: '<img src="/brand/logo-white.png" alt="AstralPass" style="max-width: 18rem; width: 100%; height: auto;" />'
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Start with the Core docs
+      link: /core/about-astralpass/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    - text: Explore the Star Atlas docs
+      link: /star-atlas/why-astralpass-for-star-atlas/
+      icon: right-arrow
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## What AstralPass helps you do
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Verify ownership" icon="checkmark">
+    Prove that your Discord account and wallet belong to you.
+  </Card>
+  <Card title="Get onboarded" icon="open-book">
+    Follow the steps your DAC requires, with guidance directly in Discord.
+  </Card>
+  <Card title="Understand your Star Atlas status" icon="seti:dashboard">
+    Use linked wallets and player data to power roles, onboarding, and insights.
+  </Card>
 </CardGrid>
+
+## AstralPass in one sentence
+
+AstralPass helps DACs and players connect **Discord identity**, **wallet ownership**, and **Star Atlas membership or profile data** in one place.
+
+## Read by topic
+
+### Core
+
+Start here if you want to understand the normal AstralPass flow:
+
+- [About AstralPass](/core/about-astralpass/)
+- [Getting Started](/core/getting-started/)
+- [Linking Wallets](/core/linking-wallets/)
+- [Hardware Wallets](/core/hardware-wallets/)
+- [Discord Roles](/core/discord-roles/)
+- [Solo Players](/core/solo-players/)
+
+### Star Atlas
+
+Go here if you want the Star Atlas-specific context:
+
+- [Why AstralPass for Star Atlas](/star-atlas/why-astralpass-for-star-atlas/)
+- [Player Profiles](/star-atlas/player-profiles/)
+- [Joining a DAC On-Chain](/star-atlas/joining-a-dac-on-chain/)
+- [DAC Membership and Discord Roles](/star-atlas/dac-membership-and-discord-roles/)
+- [DAC Admin Basics](/star-atlas/dac-admin-basics/)
+- [Glossary](/star-atlas/glossary/)
+
+## Before you troubleshoot
+
+A lot of AstralPass questions come down to one of these:
+
+- the wrong wallet was linked
+- a DAC step is still incomplete
+- Discord approval and on-chain DAC membership are not the same thing
+- a role has not been re-evaluated yet
+
+If that sounds familiar, jump to [Troubleshooting](/core/troubleshooting/).
