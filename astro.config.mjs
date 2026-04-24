@@ -1,7 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import logo from './src/assets/logo-white.png';
+import logoDark from './src/assets/logo-white.png';
+import logoLight from './src/assets/logo-color.png';
 
 export default defineConfig({
 	site: 'https://docs.astralpass.com',
@@ -11,7 +12,8 @@ export default defineConfig({
 			title: 'AstralPass Docs',
 			description: 'Documentation for AstralPass, the Discord, wallet, and Star Atlas bridge.',
 			logo: {
-				src: logo,
+				dark: logoDark,
+				light: logoLight,
 				alt: 'AstralPass',
 			},
 			customCss: ['./src/styles/custom.css'],
@@ -37,8 +39,8 @@ export default defineConfig({
 					label: 'Star Atlas',
 					items: [
 						{ label: 'Why AstralPass for Star Atlas', slug: 'star-atlas/why-astralpass-for-star-atlas' },
-						{ label: 'What Is a DAC?', slug: 'star-atlas/what-is-a-dac' },
 						{ label: 'Player Profiles', slug: 'star-atlas/player-profiles' },
+						{ label: 'What Is a DAC?', slug: 'star-atlas/what-is-a-dac' },
 						{ label: 'Joining a DAC On-Chain', slug: 'star-atlas/joining-a-dac-on-chain' },
 						{ label: 'DAC Membership and Discord Roles', slug: 'star-atlas/dac-membership-and-discord-roles' },
 						{ label: 'Glossary', slug: 'star-atlas/glossary' },

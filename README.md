@@ -49,8 +49,8 @@ Production domain:
 
 ### Star Atlas
 - Why AstralPass for Star Atlas
-- What Is a DAC?
 - Player Profiles
+- What Is a DAC?
 - Joining a DAC On-Chain
 - DAC Membership and Discord Roles
 - Glossary
