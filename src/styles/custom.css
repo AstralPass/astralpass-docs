@@ -72,15 +72,25 @@
 
 :root[data-theme='light'] {
 	--ap-bg-1: #ffffff;
-	--ap-bg-2: #ffffff;
-	--ap-bg-3: #ffffff;
+	--ap-bg-2: #f7f5ff;
+	--ap-bg-3: #f1eeff;
 	--ap-surface-1: rgba(255, 255, 255, 0.98);
 	--ap-surface-2: rgba(48, 43, 99, 0.05);
 	--ap-border: rgba(48, 43, 99, 0.12);
 	--ap-border-strong: rgba(93, 86, 194, 0.24);
 	--ap-text: #161427;
-	--ap-text-soft: rgba(22, 20, 39, 0.78);
-	--ap-text-muted: rgba(22, 20, 39, 0.58);
+	--ap-text-soft: rgba(22, 20, 39, 0.82);
+	--ap-text-muted: rgba(22, 20, 39, 0.66);
+
+	--sl-color-white: #161427;
+	--sl-color-gray-1: #201d36;
+	--sl-color-gray-2: #3d3959;
+	--sl-color-gray-3: #5d5878;
+	--sl-color-gray-4: #78748f;
+	--sl-color-gray-5: #cdc9e0;
+	--sl-color-gray-6: #efedff;
+	--sl-color-gray-7: #f7f5ff;
+	--sl-color-black: #ffffff;
 
 	--sl-color-accent-low: #efedff;
 	--sl-color-accent: #5d56c2;
@@ -88,14 +98,15 @@
 	--sl-color-text: #161427;
 	--sl-color-text-accent: #4a44aa;
 	--sl-color-text-invert: #ffffff;
-	--sl-color-text-muted: rgba(22, 20, 39, 0.58);
+	--sl-color-text-muted: rgba(22, 20, 39, 0.66);
 	--sl-color-bg: #ffffff;
 	--sl-color-bg-nav: rgba(255, 255, 255, 0.96);
-	--sl-color-bg-sidebar: #ffffff;
+	--sl-color-bg-sidebar: #f7f5ff;
 	--sl-color-bg-inline-code: rgba(48, 43, 99, 0.08);
+	--sl-color-bg-accent: #5d56c2;
 	--sl-color-hairline-light: rgba(48, 43, 99, 0.08);
 	--sl-color-hairline: rgba(48, 43, 99, 0.12);
-	--sl-color-black: #0f0d20;
+	--sl-color-hairline-shade: rgba(48, 43, 99, 0.08);
 }
 
 :root {
@@ -129,9 +140,9 @@ body {
 h1,
 .sl-markdown-content h1 {
 	font-family: var(--ap-font-heading);
-	font-size: clamp(2rem, 3.4vw, 3rem);
+	font-size: clamp(1.75rem, 2.8vw, 2.5rem);
 	letter-spacing: 0.01em;
-	line-height: 1.05;
+	line-height: 1.08;
 	text-transform: uppercase;
 }
 
@@ -146,11 +157,11 @@ h4,
 }
 
 .sl-markdown-content h2 {
-	font-size: clamp(1.5rem, 2vw, 2rem);
+	font-size: clamp(1.35rem, 1.75vw, 1.75rem);
 }
 
 .sl-markdown-content h3 {
-	font-size: clamp(1.2rem, 1.4vw, 1.45rem);
+	font-size: clamp(1.1rem, 1.2vw, 1.3rem);
 }
 
 .hero .tagline,

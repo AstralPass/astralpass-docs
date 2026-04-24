@@ -1,7 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import logo from './src/assets/logo-white.png';
+import logoDark from './src/assets/logo-white.png';
+import logoLight from './src/assets/logo-color.png';
 
 export default defineConfig({
 	site: 'https://docs.astralpass.com',
@@ -11,7 +12,8 @@ export default defineConfig({
 			title: 'AstralPass Docs',
 			description: 'Documentation for AstralPass, the Discord, wallet, and Star Atlas bridge.',
 			logo: {
-				src: logo,
+				dark: logoDark,
+				light: logoLight,
 				alt: 'AstralPass',
 			},
 			customCss: ['./src/styles/custom.css'],
