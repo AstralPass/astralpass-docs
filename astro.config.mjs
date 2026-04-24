@@ -10,7 +10,8 @@ export default defineConfig({
 		starlight({
 			disable404Route: true,
 			title: 'AstralPass Docs',
-			description: 'Documentation for AstralPass, the Discord, wallet, and Star Atlas bridge.',
+			description:
+				'Learn how AstralPass connects Discord, Solana wallets, and Star Atlas identities to make community access easier and more reliable.',
 			logo: {
 				dark: logoDark,
 				light: logoLight,
@@ -18,31 +19,32 @@ export default defineConfig({
 			},
 			customCss: ['./src/styles/custom.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/AstralPass/astralpass-docs' }],
-			head: [
-				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', href: '/brand/favicon.png' } },
-			],
+			head: [{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', href: '/brand/favicon.png' } }],
 			sidebar: [
 				{
-					label: 'Core',
+					label: 'Using AstralPass',
 					items: [
-						{ label: 'About AstralPass', slug: 'core/about-astralpass' },
+						{ label: 'What Is AstralPass?', slug: 'core/about-astralpass' },
 						{ label: 'Getting Started', slug: 'core/getting-started' },
-						{ label: 'Linking Wallets', slug: 'core/linking-wallets' },
-						{ label: 'Hardware Wallets', slug: 'core/hardware-wallets' },
-						{ label: 'Discord Roles', slug: 'core/discord-roles' },
-						{ label: 'Solo Players', slug: 'core/solo-players' },
+						{ label: 'Linking Your Wallets', slug: 'core/linking-wallets' },
+						{ label: 'Using Hardware Wallets', slug: 'core/hardware-wallets' },
+						{ label: 'Discord Roles and Access', slug: 'core/discord-roles' },
+						{ label: 'For Solo Players', slug: 'core/solo-players' },
 						{ label: 'Troubleshooting', slug: 'core/troubleshooting' },
 						{ label: 'FAQ', slug: 'core/faq' },
 					],
 				},
 				{
-					label: 'Star Atlas',
+					label: 'Star Atlas Communities',
 					items: [
-						{ label: 'Why AstralPass for Star Atlas', slug: 'star-atlas/why-astralpass-for-star-atlas' },
+						{ label: 'Why Use AstralPass', slug: 'star-atlas/why-astralpass-for-star-atlas' },
 						{ label: 'Player Profiles', slug: 'star-atlas/player-profiles' },
-						{ label: 'What Is a DAC?', slug: 'star-atlas/what-is-a-dac' },
+						{ label: 'Guilds / DACs', slug: 'star-atlas/what-is-a-dac' },
 						{ label: 'Joining a DAC On-Chain', slug: 'star-atlas/joining-a-dac-on-chain' },
-						{ label: 'DAC Membership and Discord Roles', slug: 'star-atlas/dac-membership-and-discord-roles' },
+						{
+							label: 'DAC Membership and Discord Roles',
+							slug: 'star-atlas/dac-membership-and-discord-roles',
+						},
 						{ label: 'Glossary', slug: 'star-atlas/glossary' },
 					],
 				},
