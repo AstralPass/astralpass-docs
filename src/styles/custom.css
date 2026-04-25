@@ -67,7 +67,7 @@
 }
 
 :root[data-theme='light'] {
-	--ap-bg-1: #ffffff;
+	--ap-bg-1: #dcddf4;
 	--ap-bg-2: #f7f5ff;
 	--ap-bg-3: #f1eeff;
 	--ap-surface-1: rgba(75, 68, 170, 0.22);
@@ -94,13 +94,7 @@
 	--sl-color-accent-low: #efedff;
 	--sl-color-accent: #5d56c2;
 	--sl-color-accent-high: #2d2875;
-	/* --sl-color-text: #161427;
-	--sl-color-text-accent: #4a44aa;
-	--sl-color-text-invert: #ffffff;
-	--sl-color-text-muted: rgba(22, 20, 39, 0.66); */
-	--sl-color-bg: #ffffff;
-	--sl-color-bg-nav: #7c7ddb;
-	--sl-color-bg-sidebar: #f7f5ff;
+	--sl-color-bg-nav: #1e1b52;
 	--sl-color-bg-inline-code: rgba(48, 43, 99, 0.08);
 	--sl-color-bg-accent: #5d56c2;
 	--sl-color-hairline-light: rgba(48, 43, 99, 0.08);
@@ -136,8 +130,12 @@ body {
 	color: var(--ap-text);
 }
 
+:root[data-theme='light'] header {
+	color: #ffffff;
+}
+
 :root[data-theme='light'] :is(.site-title, .site-title a) {
-	color: #161427;
+	color: rgba(255, 255, 255, 0.92);
 }
 
 h1,
@@ -176,6 +174,16 @@ h4,
 	text-transform: uppercase;
 }
 
+.pagination-links a {
+	background: linear-gradient(0deg, #0a081a8c, #0a081a26);
+	border-radius: 1rem;
+}
+
+:root[data-theme='light'] .pagination-links a {
+	background: linear-gradient(0deg, rgba(83, 67, 211, 0.25), rgba(83, 67, 211, 0.15));
+	border-radius: 1rem;
+}
+
 .sidebar-content summary {
 	font-size: 1.125rem;
 
@@ -210,25 +218,22 @@ header.top-header {
 	background: rgba(255, 255, 255, 0.96);
 }
 
+.social-icons a {
+	color: #00ffaa;
+}
+
 .sidebar-pane {
 	box-shadow: inset -6px 0 12px #00000040;
 }
 
-:root[data-theme='light'] .sidebar-pane {
-	background: #ffffff;
-}
-
-.main-pane {
-	/* background: linear-gradient(180deg, rgba(10, 8, 26, 0.42), rgba(10, 8, 26, 0.18)); */
-}
-
-:root[data-theme='light'] .main-pane {
-	background: #ffffff;
-}
-
 .right-sidebar {
 	border-inline-start: none;
-	background: linear-gradient(180deg, rgba(10, 8, 26, 0.55), rgba(10, 8, 26, 0.15));
+	background: linear-gradient(180deg, rgba(10, 8, 26, 0.2), rgba(10, 8, 26, 0.1));
+}
+
+:root[data-theme='light'] .right-sidebar {
+	background-color: var(--sl-color-bg-sidebar);
+	background: linear-gradient(180deg, rgba(83, 67, 211, 0.25), rgba(83, 67, 211, 0.15));
 }
 
 .sl-markdown-content table,
@@ -327,10 +332,12 @@ header.top-header {
 :root[data-theme='light'] .social-icons a img {
 	filter: drop-shadow(0 0 0.12rem rgba(17, 25, 40, 0.2));
 }
-
-:root[data-theme='light'] .right-sidebar {
-	background: linear-gradient(180deg, rgba(10, 8, 26, 0.25), rgba(10, 8, 26, 0.15));
+ 
+:root[data-theme='light'] starlight-theme-select label {
+	color: var(--sl-color-accent-low);
 }
 
-
- 
+:root[data-theme='light'] starlight-toc a[aria-current="true"] {
+	color: #181533;
+	font-weight: 600;
+}
