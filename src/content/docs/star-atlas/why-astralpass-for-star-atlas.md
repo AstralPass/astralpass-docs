@@ -12,15 +12,16 @@ That matters because Star Atlas communities often need more than a generic walle
 - Player Profiles
 - DAC membership on-chain
 - Discord-side community access
+- Star Atlas Governance
 
 ## Why generic verification is not enough
 
 A generic verification tool can prove that a wallet belongs to a user.
 But Star Atlas communities often need to know more than that.
 
-They may also care about:
+They likely also care about:
 
-- whether the user has a Player Profile
+- whether the user has a(n active) Player Profile
 - whether the user belongs to a DAC on-chain
 - whether the user's Discord-side status matches their Star Atlas-side status
 

@@ -5,22 +5,11 @@ description: A plain-language explanation of what a DAC is in Star Atlas and why
 
 In Star Atlas, a **DAC** is a **Decentralized Autonomous Corporation**.
 
-That sounds more complicated than it really is.
-In practice, the easiest way to understand a DAC is this:
+A DAC is basically Star Atlas’ version of a guild, with some DAO elements mixed in.
 
-> A DAC is basically Star Atlas’ version of a guild, but imagined as a much larger and more serious player-run organization.
+But, if you are used to games (such as MMOs - Massively Multiplayer Online games) with guilds, clans, or alliances, then a DAC is bascially the Star Atlas equivalent.
 
-## The short version
-
-If you are used to games with:
-
-- guilds
-- clans
-- alliances
-
-then a DAC is the closest Star Atlas equivalent.
-
-The main difference is that Star Atlas imagines these groups as more formal, more structured, and more durable than a normal MMO guild.
+The main difference is that Star Atlas imagines these groups as more decentralized, more autonomous, and therefore, hopefully more durable than a normal MMO guild.
 
 ## Why DACs exist in Star Atlas
 
