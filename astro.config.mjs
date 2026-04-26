@@ -29,7 +29,6 @@ export default defineConfig({
 						{ label: 'Linking Your Wallets', slug: 'core/linking-wallets' },
 						{ label: 'Using Hardware Wallets', slug: 'core/hardware-wallets' },
 						{ label: 'Discord Roles and Access', slug: 'core/discord-roles' },
-						{ label: 'For Solo Players', slug: 'core/solo-players' },
 						{ label: 'Troubleshooting', slug: 'core/troubleshooting' },
 						{ label: 'FAQ', slug: 'core/faq' },
 					],

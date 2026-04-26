@@ -43,7 +43,6 @@ Production domain:
 - Linking Wallets
 - Hardware Wallets
 - Discord Roles
-- Solo Players
 - Troubleshooting
 - FAQ
 
